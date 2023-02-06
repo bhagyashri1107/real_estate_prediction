@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>house_price_pred </title>
+    <style>
+        body{
+            background-image : url(https://images.squarespace-cdn.com/content/v1/5bff051750a54fa92832c4f4/1645046099049-5S0BV599AYP9C8ZE7FW4/99cdcca68fd4c0062e5631495a123d78.jpg?format=750w);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(84, 80, 0);">
+   
+   <h1> 
+    <center>Real_estate <b>Prediction</b></center></h1>
+    <form method="POST" action="/predict_rate">
+
+
+        <label>No:</label>
+        <input type = "text" name = "No">   In numbers
+         
+        </select>
+        <br>
+        <br>
+<!-- ################################################ -->
+        <label>Transaction Date:</label>
+        <input type = "text" name = "transaction_date">   eg. 2013.250 = 2013 March
+        </select>
+        <br>
+        <br>
+<!-- ############################################## -->
+        <label>House Age:</label>
+        <input type = "text" name = "house_age">   In numbers
+        
+        </select>
+        <br>
+        <br>
+ <!-- ################################################ -->
+        <label>Distance to the nearest MRT station:</label>
+        <input type = "text" name = "distance_to_the_nearest_MRT_station">   In numbers	
+        </select>
+        <br>
+        <br>
+<!-- ############################################## -->
+        <label>Number of convenience stores:</label>
+        <input type = "text" name = "number_of_convenience_stores">   In numbers
+        </select>
+        <br>
+        <br>
+<!-- ################################################ -->
+         <label>Latitude:</label>
+         <input type = "text" name = "latitude">   In numbers
+         </select>
+         <br>
+         <br>
+<!-- ############################################## -->
+        <label>Longitude:</label>
+        <input type = "text" name = "longitude">   In numbers
+        </select>
+        <br>
+        <br>
+<!-- ################################################ -->
+
+
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <!-- <h4><strong> <b> {{prediction}} </b> </strong></h4> -->
+        <h4><strong>Your home price charges will be <b> {{prediction}} /- Rs.</b> Only </strong></h4>
+
+
+
+    </form>
+
+
+</body>
+</html>
+
